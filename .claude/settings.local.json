@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(flutter devices)",
+      "PowerShell(adb devices)",
+      "PowerShell(flutter doctor --android-studio)",
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\Android\\\\Sdk\\\\platform-tools\\\\\" -ErrorAction SilentlyContinue | Select-Object Name -First 10)",
+      "PowerShell(& \"C:\\\\Users\\\\rahul\\\\AppData\\\\Local\\\\Android\\\\sdk\\\\platform-tools\\\\adb.exe\" devices)",
+      "Read(//c/Users/rahul/.gradle/daemon/8.12/**)",
+      "Read(//c/Users/rahul/.gradle/daemon/**)",
+      "Bash(find \"C:/Users/rahul/\" -name \"hs_err_pid*.log\" -newer \"C:/Users/rahul/.gradle/daemon/8.12/daemon-45600.out.log\" 2>/dev/null | head -5 *)",
+      "Read(//c/Users/rahul/**)",
+      "Read(//d/RahulMer/**)",
+      "PowerShell(\\(Get-CimInstance Win32_OperatingSystem | Select-Object FreePhysicalMemory, TotalVisibleMemorySize | ForEach-Object { \"Free: $\\([math]::Round\\($_.FreePhysicalMemory/1MB, 2\\)\\) GB / Total: $\\([math]::Round\\($_.TotalVisibleMemorySize/1MB, 2\\)\\) GB\" }\\))",
+      "PowerShell(flutter config --no-enable-windows-desktop 2>&1)",
+      "PowerShell(flutter config --no-enable-linux-desktop --no-enable-macos-desktop 2>&1)",
+      "Bash(unzip -l \"D:/RahulMer/MentalRadio/mentalradio/build/app/outputs/flutter-apk/app-debug.apk\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"D:\\\\RahulMer\\\\MentalRadio\\\\mentalradio\\\\android\\\\app\\\\src\\\\main\\\\kotlin\\\\com\\\\rahulmer\\\\mentalradio\")",
+      "Bash(git init *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git config *)",
+      "Bash(echo \"# MentalRadio\")"
+    ]
+  }
+}
